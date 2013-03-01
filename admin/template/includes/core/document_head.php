@@ -29,6 +29,7 @@
 		<link rel="stylesheet" href="<?=$cache_s3['css']?>/adminica/mobile.css">
 
 		<link rel="stylesheet" href="<?=$cache_s3['css']?>/plugins/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="<?=$cache_s3['bootstrap']?>/css/bootstrap.css">
 
 
 		<!-- Style Switcher
@@ -54,10 +55,10 @@
 
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<!-- <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" type="text/javascript"></script> -->
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" type="text/javascript"></script>
 		<script src="<?=$cache_s3['js']?>/prefixfree/prefixfree.js"></script>
 		<script src="<?=$cache_s3['bootstrap']?>/js/bootstrap.min.js"></script>
-		<!-- <script src="menus/bootstrap.min.js" type="text/javascript"></script> -->
+		<!--<script src="../../../bootstrap/js/bootstrap.min.js" type="text/javascript"></script> -->
 
 		<!-- <script src="<?=$cache_s3['js']?>/adminica/adminica_ui.js"></script> -->
 		<script src="template/scripts/adminica/adminica_ui.js" type="text/javascript"></script>
@@ -132,6 +133,11 @@
     <![endif]-->
 
 		<script type="text/javascript">
+
+		$(function () {
+			$(".datepicker").datepicker();
+		});
+
 		var days = {
 			'pt_BR': {0:'Dom', 1:'Seg', 2:'Ter', 3:'Qua', 4:'Qui', 5:'Sex', 6:'Sab'},
 			'es':    {0:'Dom', 1:'Lun', 2:'Mar', 3:'Mie', 4:'Jue', 5:'Vie', 6:'Sab'},

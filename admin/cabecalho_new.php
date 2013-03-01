@@ -1,7 +1,14 @@
 <?php
+$cache_s3 = array(
+				'css'=>'http://cache.kadabra.me/themes/adminica/styles',
+				'bootstrap'=>'http://cache.kadabra.me/bootstrap',
+				'js'=>'http://cache.kadabra.me/themes/adminica/scripts',
+				'jquery'=>'http://cache.kadabra.me/jquery',
+				'images'=>'http://cache.kadabra.me/themes/adminica/images'
 
-$cache_s3 = array('css'=>'http://cache.kadabra.me/themes/adminica/styles');
-$layout_menu = "gerencia";
+			);
+
+$layout_menu = "teste";
 switch ($layout_menu){
 	case "gerencia":
 		$nav_position = 1; $color_theme = "theme_red.css";     break;
